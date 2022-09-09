@@ -1,8 +1,10 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import BestBooks from './BestBooks';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Welcome from '../welcome/Welcome';
+import Profile from '../Profile/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css"
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,7 +20,12 @@ class App extends React.Component {
           <Routes>
             <Route 
               exact path="/"
-              element={<BestBooks />}
+              element={<Welcome />}
+            >
+            </Route>
+            <Route 
+              exact path="/Profile"
+              element={<Profile />}
             >
             </Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}

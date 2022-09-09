@@ -1,0 +1,9 @@
+.divprofile{
+    background-color: rgb(103, 162, 162);
+    filter: brightness(1.2) invert(.1);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  
+  }
