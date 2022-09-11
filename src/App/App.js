@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
 import About from '../About/About'
+import CupCalendar from '../calender/CupCalendar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import {
