@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
+import About from '../About/About'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import {
@@ -21,6 +22,11 @@ class App extends React.Component {
             <Route 
               exact path="/"
               element={<Welcome />}
+            >
+            </Route>
+            <Route 
+              exact path="/About"
+              element={<About/>}
             >
             </Route>
             <Route 

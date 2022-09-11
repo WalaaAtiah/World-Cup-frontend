@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: rgb(48, 8, 19);
+  color:whitesmoke;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+
+}
+.Header-nav {
+  display: flex;
+  gap: 150px;
+}
+.logo {
+  width: 70px;
+}
+.userPic{
+    width: 35px;
+    border-radius: 20px;
+}
+.third_part{
+    display: flex;
+}
+.button{
+    display: flex; 
+    background: whitesmoke;
+    color:rgb(48, 8, 19);
+    border-radius: 30px;
+}
