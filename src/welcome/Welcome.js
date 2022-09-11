@@ -31,15 +31,18 @@ class Welcome extends React.Component {
    return (
 <>
       <section className="Home">
-        <div >
+        <div className='calenderimag'>
           <img className="Home-img" src="https://i.pinimg.com/564x/d3/8e/f4/d38ef4f9e3a0b11f15f092dd89bf1cb0.jpg"/>
+          <div className='AppCalender'>
+          <CupCalendar />
+          </div>
         </div>
+        
+        
+
         <Groups groups={this.state.groups} />
         </section>
         
-        <div className='AppCalender'>
-         <CupCalendar />
-         </div>
         </>
     )
   }
