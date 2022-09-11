@@ -2,6 +2,8 @@ import React from 'react';
 import "./Welcome.css"
 import axios from "axios";
 import Groups from "../components/groups/groups"
+import CupCalendar from '../calender/CupCalendar';
+
 class Welcome extends React.Component {
   
   constructor(props) {
@@ -27,14 +29,21 @@ class Welcome extends React.Component {
 
   render() {
    return (
-
+<>
       <section className="Home">
-        <div >
+        <div className='calenderimag'>
           <img className="Home-img" src="https://i.pinimg.com/564x/d3/8e/f4/d38ef4f9e3a0b11f15f092dd89bf1cb0.jpg"/>
+          <div className='AppCalender'>
+          <CupCalendar />
+          </div>
         </div>
+        
+        
+
         <Groups groups={this.state.groups} />
         </section>
-
+        
+        </>
     )
   }
 }
