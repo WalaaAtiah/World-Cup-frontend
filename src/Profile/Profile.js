@@ -23,13 +23,6 @@ class Profile extends Component {
   </Card>
   </div>
     )
-    
-    // <div>
-    //    <h2>Hello {user.name}</h2> 
-    //    <h2>email: {user.email}</h2> 
-      
-
-    //     </div>;
 
   }
 }
