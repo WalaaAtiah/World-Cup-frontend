@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
+import Hotels from '../Hotels';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import {
@@ -28,6 +29,10 @@ class App extends React.Component {
               element={<Profile />}
             >
             </Route>
+            <Route 
+              exact path="/Hotels"
+              element={<Hotels />}
+            ></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />

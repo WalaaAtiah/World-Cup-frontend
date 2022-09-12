@@ -17,6 +17,7 @@ class Header extends React.Component {
         <NavItem><Link to="/" className="nav-link">Home</Link></NavItem>
         {/* PLACEHOLDER: render a navigation link to the about page */}
         {isAuthenticated&&<NavItem><Link to="/Profile" className="nav-link" >Profile</Link></NavItem>}
+        {isAuthenticated&&<NavItem><Link to="/Hotels" className="nav-link" >Hotels</Link></NavItem>}
 
         <NavItem><LoginButton/></NavItem>
         <NavItem><LogoutButton/></NavItem>
