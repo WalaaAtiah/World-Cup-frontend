@@ -5,6 +5,7 @@ import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
 import About from '../About/About'
 import CupCalendar from '../calender/CupCalendar';
+import Comment from '../Comments/Comments';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import {
@@ -33,6 +34,11 @@ class App extends React.Component {
             <Route 
               exact path="/Profile"
               element={<Profile />}
+            >
+            </Route>
+            <Route 
+              exact path="/comment"
+              element={<Comment />}
             >
             </Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}

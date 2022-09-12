@@ -17,6 +17,8 @@ class Header extends React.Component {
         <section className='Header-nav'>
         <NavItem><Link to="/" className="nav-link">Home</Link></NavItem>
         <NavItem><Link to="/About" className="nav-link">About</Link></NavItem>
+        <NavItem><Link to="/comment" className="nav-link">Comment</Link></NavItem>
+
         {isAuthenticated&&<NavItem><Link to="/Profile" className="nav-link" >Profile</Link></NavItem>}
         </section>
         <section className="third_part">
