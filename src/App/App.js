@@ -4,6 +4,8 @@ import Footer from '../Footer/Footer';
 import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
 import About from '../About/About'
+import Hotels from '../Hotels';
+
 import CupCalendar from '../calender/CupCalendar';
 import Comment from '../Comments/Comments';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -41,6 +43,10 @@ class App extends React.Component {
               element={<Comment />}
             >
             </Route>
+            <Route 
+              exact path="/Hotels"
+              element={<Hotels />}
+            ></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />

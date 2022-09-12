@@ -20,6 +20,8 @@ class Header extends React.Component {
         <NavItem><Link to="/comment" className="nav-link">Comment</Link></NavItem>
 
         {isAuthenticated&&<NavItem><Link to="/Profile" className="nav-link" >Profile</Link></NavItem>}
+        {isAuthenticated&&<NavItem><Link to="/Hotels" className="nav-link" >Hotels</Link></NavItem>}
+
         </section>
         <section className="third_part">
         {isAuthenticated&&<img src={user.picture} className="userPic"/>}
