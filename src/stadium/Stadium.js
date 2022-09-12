@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import "./Footer.css";
-import logo from "./logo.png";
+import "./Stadium.css";
 import {
   MDBFooter,
   MDBContainer,
@@ -12,7 +10,7 @@ import {
   MDBRipple,
 } from "mdb-react-ui-kit";
 
-class Footer extends React.Component {
+class Stadium extends React.Component {
   render() {
     return (
       <MDBFooter
@@ -214,7 +212,7 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+export default Stadium;
 
 // <div class="divfooter">
 //   <img
