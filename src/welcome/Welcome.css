@@ -1,20 +1,40 @@
-.Home-img{
-    height:750px;
-    width:100%; 
-}
+
 .AppCalender{
     color: aliceblue;
-    position:sticky;
-    right:0;
+ /* position:sticky; */
     top:0 ;
     border: 1px solid #2a0311 ;
-    width: 400px;
+    /* width: 400px; */
     background-color:#1c020b;
+    width:30%;
+    height: 100%;
 }
 
 .calenderimag{
-     display: flex;
-     margin-bottom: 10px;
-     box-sizing:content-box;
+    display:flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 850px;  
 }
 
+.group-header{
+    background-color: rgb(48, 8, 19);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-bottom:10px ;
+    padding: 10px;
+    border-radius: 100px;
+}
+.Home-img{
+    width:70%;
+    height: 100%;
+}
+/* .group_component{
+    margin : 2rem 3rem 3rem 4.5rem;
+    background-color: #1c020b;
+} */

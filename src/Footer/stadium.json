@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Al Bayt Stadium",
+      "Capacity":"60,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-08/Al-Bayt-Stadium-1.jpg?h=54c3999e&itok=oiwFVmsq",
+      "Designed_by":"Dar Al Handasah ",
+      "location":"Al Khor City, 35km north of Doha",
+      "First_Match":"The opening Match the FIFA World Cup 2022-Qatar v Ecuador:20 November (7PM)"
+
+    },
+    {
+        "name": "Lusail Stadium",
+        "Capacity":"80,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/800x450/public/2022-08/Lusail-Stadium-1.jpg?h=ebff862d&itok=WOqUqK5R",
+      "Designed_by":"Foster + Partners",
+      "location":"Lusail City, 20km north of central Doha",
+      "First_Match":"Argentina v Saudi Arabia:22 November (1pm)"
+
+      },
+      {
+        "name": "Ahmad Bin Ali Stadium",
+        "Capacity":"40,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/800x450/public/2022-08/Ahmad-Bin-Ali-Stadium-1.jpg?h=8f9cfe54&itok=5HNqLUjV",
+      "Designed_by":"Ramboll      ",
+      "location":"Al Rayyan, 20km west of central Doha",
+      "First_Match":"USA v Wales:21 November (10pm)"
+
+      },
+      {
+        "name": "Al Janoub Stadium",
+        "Capacity":"40,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/800x450/public/2022-08/Al-Janoub-Stadium-1.jpg?h=dd27d7cd&itok=rjwnaMjt",
+      "Designed_by":"Dar Al Handasah ",
+      "location":"Al Wakrah, 22km east of central Doha",
+      "First_Match":"France v Australia:22 November (10pm)"
+
+        
+      },
+      {
+        "name": "Al Thumama Stadium",
+        "Capacity":"40,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-08/Al-Thumama-Stadium-1.jpg?h=d9cfc38e&itok=FyQh2HJ5",
+      "Designed_by":"Dar Al Handasah ",
+      "location":"Al Thumama, 12km south of central Doha",
+      "First_Match":"Senegal v Netherlands:21 November (10pm)"
+
+        
+      },
+      {
+        "name": "Stadium 974",
+        "Capacity":"40,000",
+      "image" :"https://www.qatar2022.qa/sites/default/files/styles/800x450/public/2022-08/Stadium-974-1_0.jpg?h=584df903&itok=HdCnVc1p",
+      "Designed_by":"Dar Al Handasah ",
+      "location":"Ras Bu Abboud, 10km east of central Doha",
+      "First_Match":"Mexico v Poland:22 November (7pm)"
+
+        
+      }
+      
+  
+   
+  ]
+  

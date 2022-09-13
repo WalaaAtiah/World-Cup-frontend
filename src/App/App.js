@@ -5,11 +5,11 @@ import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
 import About from '../About/About'
 import Hotels from '../Hotels';
-
-import CupCalendar from '../calender/CupCalendar';
+import Modulefooter from '../Footer/Modulefooter'
 import Comment from '../Comments/Comments';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
+import Data from "../Footer/stadium.json"
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,11 +17,37 @@ import {
 } from "react-router-dom";
 
 class App extends React.Component {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      setshow: false,
+      selBeast:{},
+      
+    };
+  }
+  handleClose = () => {
+    this.setState({
+      setshow: false,
+    });
+  };
+  Module = (name) => {
+    console.log("inside model function")
+    this.setState({
+      setshow: true,
+      selBeast: Data.find((item) => item.name === name),
+    });
+  };
+
+
   render() {
     return (
       <>
         <Router>
+        <div className='hedred_fixed'>
           <Header />
+          </div>
           <Routes>
             <Route 
               exact path="/"
@@ -49,7 +75,14 @@ class App extends React.Component {
             ></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
-          <Footer />
+          <Footer Module={this.Module} />
+          
+        <Modulefooter
+          setshow={this.state.setshow}
+          handleClose={this.handleClose}
+          selBeast={this.state.selBeast}
+        />
+      
         </Router>
       </>
     )
