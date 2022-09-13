@@ -1,0 +1,34 @@
+[
+    {
+      "groupName": "Brazil ",
+      "year":"2002",
+      "picture":"https://i.ytimg.com/vi/rCEDIo5srLk/maxresdefault.jpg",
+      "description":"Brazil won the 2002 FIFA World Cup hosted by South Korea and Japan. Brazil was drawn into Group C alongside Turkey, Costa Rica, and China. Brazil started off very well, beating all 3 teams in their group to finish on top of the table with 9 points. Brazil followed this up with a comfortable Round of 16 win against Belgium thanks to goals by Rivaldo and Ronaldo."
+    },
+    {
+      "groupName": "Italy",
+      "year":"2006",
+      "picture":"https://bolavip.com/__export/1651969824525/sites/bolavip/img/2022/05/07/italyx_germany_2006x_fifa_world_cup.jpeg_22993414.jpeg",
+      "description":"Italy won the 2006 FIFA World Cup held in Germany. They were drawn into Group E with Ghana, the Czech Republic, and the United States. Italy won their games against Ghana and the Czech Republic with ease but struggled to a 1-1 draw against the United States. Ironically this was the only Point the United States was able to take in the entirety of the 2006 FIFA World Cup and it was against Italy, who would go on to win the World Cup."
+    },
+    {
+      "groupName": "Spain",
+      "year":"2010",
+      "picture":"https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/7/11/1278884544272/Netherlands-v-Spain-2010--027.jpg?width=700&quality=85&auto=format&fit=max&s=c5c9837c60789bd396ed15bf4af3f951",
+      "description":"Spain became the champions of the world in 2010. They managed to beat Netherlands in the finals to lift the 2010 FIFA World Cup Trophy. Spain were drawn into Group H along with Chile, Switzerland, and Honduras. Everyone expected Spain to win their games comfortably but they were shocked in the first game itself."
+    },
+
+    {
+      "groupName": "Germany",
+      "year":"2014",
+      "picture":"https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltfc4eae5ae1b10939/60e0a7c7ab06fd2f08eeec36/c35ee1a186ed54e68a2745fca6221c3f62db17a2.jpg",
+      "description":"Germany won the 2014 FIFA World Cup. Germany started their World Cup campaign in Group G where they were drawn alongside Portugal, Ghana, and United States. Germany won their games against Portugal and United States but could only muster up a draw against Ghana. Despite the draw, Germany still topped their group and qualified for the knockout stages."
+    },
+    {
+        "groupName": "France" ,
+        "year":"2018",
+        "picture":"https://imgresizer.eurosport.com/unsafe/2560x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2018/07/15/2373568-49370130-2560-1440.png",
+        "description":"France were the winners of the 2018 FIFA World Cup. France was drawn into Group C alongside Denmark, Peru, and Australia. France won their games against Peru and Australia and drew to Denmark, which put them on the top of Group C. France then faced Argentina in one of the most exciting matches of the tournament."
+    }
+
+  ]

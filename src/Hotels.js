@@ -37,7 +37,7 @@ class Hotels extends Component {
     event.preventDefault();
 
     document.getElementById("omar").style.display=("block");
-    console.log(event.target.select.value);
+    // console.log(event.target.select.value);
     // let obj = event.target.select.value;
     // let arr= matches.find(item=>{
     //     if (obj == item.MatchNumber){
@@ -52,8 +52,8 @@ class Hotels extends Component {
         x: event.target.select.value    
     })
     // console.log(arr.Location)
-    console.log("this is the index "+this.state.x)
-    console.log("query test "+matches[y].Location )
+    // console.log("this is the index "+this.state.x)
+    // console.log("query test "+matches[y].Location )
 
     //API fetch:
 const options = {
@@ -67,7 +67,7 @@ const options = {
   };
 
   axios.request(options).then(function (response) {
-      console.log(response.data.suggestions[1].entities);
+      // console.log(response.data.suggestions[1].entities);
     //   this.setState({
     //     hotelsArr: event.target.select.value    
 
@@ -89,7 +89,7 @@ const options = {
             {matches.map((match, index) => {
               return (
                 <>
-                {console.log(match)}
+                {/* {console.log(match)} */}
                 <h1> Location: {match.Location}</h1>
               <option  id="dee"  value={index}>{match.countries} </option>
               </>

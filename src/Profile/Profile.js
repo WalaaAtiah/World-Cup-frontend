@@ -9,7 +9,9 @@ class Profile extends Component {
     const { user } = this.props.auth0;
     console.log(user)
     return(
+
     <div className='divprofile'  style={{ display:"flex",justifyContent:'center' }}>
+      <p>the user name information</p>
     <Card style={{ width: '22rem',margin:"15px" }}>
     <Card.Img variant="top" src={user.picture} />
     <Card.Body>
