@@ -1,0 +1,28 @@
+  [
+    {
+    
+      "name": "Omar Ali",
+      "photo" : "src/About/Assets/omarSaadeh.jpg",
+      "desc":"I am Omar, I am , I studied  Autotronics Engineering  at Wadi Al-Seer College, and I also graduated from Al-Zaytoonah University with a major in  AI "
+    } ,
+    {
+        "name": "Omar Darweesh",
+        "photo" : "src/About/Assets/omarD.jpg",
+        "desc":"Result-driven computer science graduate passionate about web development and managing databases. great problem-solving skills I'm also a team worker."
+      },
+      {
+        "name": "Amani M ALZoubi",
+        "photo" : "src/About/Assets/amani.jpg",
+        "desc":"Electrical engineer / RF engineer /web development - Python "
+      },
+      {
+        "name": "WalaaAtiyh",
+        "photo" : "src/About/Assets/walaa.jpg",
+        "desc":"I graduated from the Electrical Engineering Department at the University of Jordan in 2019."
+      },
+      {
+        "name": "Bayan Bushnaq",
+        "photo" : "src/About/Assets/bayan.jpg",
+        "desc":"I am a Data Scientist What is your Super Power !"
+      }
+]
