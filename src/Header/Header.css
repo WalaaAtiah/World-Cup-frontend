@@ -11,28 +11,36 @@
   color:whitesmoke;
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 300px;
-
+  width:100%;
+  position: fixed;
 }
 .Header-nav {
   display: flex;
-  gap: 150px;
+  justify-content:flex-start;
+  gap:100px;
+  padding: 10px;
+  margin-left: 50px;
+  width: 1000px;
+
 }
+.navlink{
+  color:whitesmoke;
+  font-size: large;
+
+}
+
 .logo {
   width: 70px;
 }
 .userPic{
-    width: 35px;
-    border-radius: 20px;
+  margin-left: 50px ;
+  width: 50px;
+  border-radius: 35px;
 }
 .third_part{
-    display: flex;
-}
-.button{
-    display: flex; 
-    background: whitesmoke;
-    color:rgb(48, 8, 19);
-    border-radius: 30px;
+  display: flex;
+  justify-content:flex-end;
+  width: 200px;
+
 }

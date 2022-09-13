@@ -3,7 +3,7 @@ import "./Welcome.css"
 import axios from "axios";
 import Groups from "../components/groups/groups"
 import CupCalendar from '../calender/CupCalendar';
-
+import History from '../history/history/history';
 class Welcome extends React.Component {
   
   constructor(props) {
@@ -37,10 +37,19 @@ class Welcome extends React.Component {
           <CupCalendar />
           </div>
         </div>
+        <div className="group-header">
+            <h3> List of groups of the FIFA World Cup</h3>
+          </div>
+          <section className="group_component">
+          <Groups groups={this.state.groups}/>
+          </section>
         
-        
-
-        <Groups groups={this.state.groups} />
+        <section>
+          <div className="group-header">
+            <h3> List of winners of the FIFA World Cup</h3>
+          </div>
+          <History/>
+          </section>
         </section>
         
         </>

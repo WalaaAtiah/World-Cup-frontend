@@ -20,18 +20,18 @@ console.log(this.state.favorite)
       const { isAuthenticated } = this.props.auth0;
         return (
             <>
-            <Carousel >
+            <Carousel className="group">
               {this.props.slide.map((item) => {
                 return (
-                  <Carousel.Item>
+                  <Carousel.Item className="teamimg">
                     <img
                       className="d-block w-100"
                       src={item.flag}
                       alt={item.country}
-                      style={{width:"50px",height:"200px"}}
+                      style={{width:"50px",height:"200px",borderRadius:"20px" }}
                     />
                     <Carousel.Caption
-                    style={{border:"solid 1px rgba(255,255,255,.5)" ,backgroundColor:"rgba(0,0,0,.5)"}}
+                    style={{border:"solid 1px rgba(255,255,255,.5)" ,backgroundColor:"rgba(0,0,0,.5)" ,borderRadius:"20px"}}
                     >
                     <p>{item.id}</p>
                     <p>{item.country}</p>
@@ -42,7 +42,7 @@ console.log(this.state.favorite)
                 );
               })}
             </Carousel>
-            {isAuthenticated&&<div>Choose Your Team <img src={this.state.favorite} style={{width:"20%",borderRadius:"50%"}}/></div>}
+            {isAuthenticated&&<div>Choose Your Team <img src={this.state.favorite} style={{width:"50px",borderRadius:"50%"}}/></div>}
             
             </>
         )
