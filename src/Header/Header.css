@@ -18,10 +18,10 @@
 .Header-nav {
   display: flex;
   justify-content:flex-start;
-  gap:100px;
+  gap:80px;
   padding: 10px;
   margin-left: 50px;
-  width: 1500px;
+  width: 1000px;
 
 }
 .navlink{
