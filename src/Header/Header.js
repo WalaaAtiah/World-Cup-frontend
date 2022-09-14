@@ -6,6 +6,7 @@ import { withAuth0 } from '@auth0/auth0-react';
 import LoginButton from '../LoginButton';
 import LogoutButton from '../LogoutButton';
 import logo from "./logo.png"
+import Goals from "../Comments/youtube"
 
 
 class Header extends React.Component {
@@ -19,6 +20,8 @@ class Header extends React.Component {
         <NavItem><Link to="/" className="navlink">Home</Link></NavItem>
         <NavItem><Link to="/About" className="navlink">About</Link></NavItem>
         <NavItem><Link to="/comment" className="navlink">Commentators</Link></NavItem>
+        <NavItem><Link to="/Goals" className="navlink">Goals</Link></NavItem>
+
         {isAuthenticated&&<NavItem><Link to="/Hotels" className="navlink" >Hotels</Link></NavItem>}
         {isAuthenticated&&<NavItem><Link to="/Profile" className="navlink" >Profile</Link></NavItem>}
 
