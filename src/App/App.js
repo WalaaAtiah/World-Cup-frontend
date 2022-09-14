@@ -5,7 +5,7 @@ import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
 import About from '../About/About'
 import Hotels from '../Hotels';
-
+import Youtubee from '../Comments/youtube';
 import CupCalendar from '../calender/CupCalendar';
 import Comment from '../Comments/Comments';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,6 +47,11 @@ class App extends React.Component {
               exact path="/Hotels"
               element={<Hotels />}
             ></Route>
+            <Route 
+              exact path="/Goals"
+              element={<Youtubee />}
+            >
+            </Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />
