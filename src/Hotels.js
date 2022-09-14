@@ -5,39 +5,34 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import matches from "./ matches.json";
 // import { Action } from "history";
 import axios from "axios";
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Hotelsdetail from "./Hotelsdetail";
 
-
-class Hotels extends Component {
-
-
-
-
-
-
+class Hotels extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-         location: '',
-         x: 0,
-         hotelsArr:[]
-
-         };
-
-
+      location: "",
+      x: 0,
+      hotelsArr: [],
+      transportArr: [],
+      landmarkArr: [],
+      featuresArr: [],
+      setshow: false,
+      selName:""
+    };
   }
 
-
-
-
-
-  displayMatchDetailsAndHotels = (event) => {
+  displayMatchDetailsAndHotels = async (event) => {
     event.preventDefault();
 
-    document.getElementById("omar").style.display=("block");
-    // console.log(event.target.select.value);
+    document.getElementById("omar").style.display = "block";
+    document.getElementById("add").style.display = "block";
+    document.getElementById("del").style.display = "block";
+
+    console.log(event.target.select.value);
     // let obj = event.target.select.value;
     // let arr= matches.find(item=>{
     //     if (obj == item.MatchNumber){
@@ -49,85 +44,184 @@ class Hotels extends Component {
 
     let y = event.target.select.value;
     this.setState({
-        x: event.target.select.value    
-    })
+      x: event.target.select.value,
+    });
     // console.log(arr.Location)
-    // console.log("this is the index "+this.state.x)
-    // console.log("query test "+matches[y].Location )
+    // console.log("this is the index " + this.state.x);
+    // console.log("query test " + matches[y].Location);
 
-    //API fetch:
-const options = {
-    method: 'GET',
-    url: 'https://hotels4.p.rapidapi.com/locations/v2/search',
-    params: {query: matches[y].Location, locale: 'en_US', currency: 'USD'},
-    headers: {
-      'X-RapidAPI-Key': 'fe69c4ff72mshe94bf22e4599113p1f56acjsn5d2335d2ea2f',
-      'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
-    }
+    //API get:
+    const options = {
+      method: "GET",
+      url: "https://hotels4.p.rapidapi.com/locations/v2/search",
+      params: { query: matches[y].Location, locale: "en_US", currency: "USD" },
+      headers: {
+        "X-RapidAPI-Key": "fe69c4ff72mshe94bf22e4599113p1f56acjsn5d2335d2ea2f",
+        "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+      },
+    };
+
+    axios
+      .request(options)
+      .then((response) => {
+        this.setState({
+          hotelsArr: response.data.suggestions[1].entities,
+          transportArr: response.data.suggestions[3].entities,
+          landmarkArr: response.data.suggestions[2].entities,
+        });
+        // console.log("123",this.state.landmarkArr)
+      })
+
+      .catch(function (error) {
+        console.error(error);
+      });
+  };
+  addDetails = (id,name) => {
+    const options = {
+      method: "GET",
+      url: "https://hotels4.p.rapidapi.com/properties/get-details",
+      params: {
+        id: id,
+        checkIn: "2020-01-08",
+        checkOut: "2020-01-15",
+        adults1: "1",
+        currency: "USD",
+        locale: "en_US",
+      },
+      headers: {
+        "X-RapidAPI-Key": "fe69c4ff72mshe94bf22e4599113p1f56acjsn5d2335d2ea2f",
+        "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+      },
+    };
+
+    axios
+      .request(options)
+      .then((response) => {
+        this.setState({
+          featuresArr:
+            response.data.data.body.overview.overviewSections[0].content,
+          setshow: true,
+          selName:name,
+        });
+        console.log("123", this.state.featuresArr);
+
+        console.log("123", this.state.setshow);
+      })
+
+      .catch(function (error) {
+        console.error(error);
+      });
   };
 
-  axios.request(options).then(function (response) {
-      // console.log(response.data.suggestions[1].entities);
-    //   this.setState({
-    //     hotelsArr: event.target.select.value    
+  handleClose = () => {
+    this.setState({
+      setshow: false,
+    });
+  };
 
-    // })
-  }).catch(function (error) {
-      console.error(error);
-  });
-  }
   render() {
-
-
     return (
-      <div>
-        <h1>Please select one of the matches to see the available Hotels</h1>
+      <div >
+        <h1 style={{textAlign:"center" , margin:"20px 20px"}}>Please select one of the matches to see the available Hotels</h1>
 
-        <form onSubmit={this.displayMatchDetailsAndHotels } >
-          <label form="cars">Choose a match</label>
+        <form onSubmit={this.displayMatchDetailsAndHotels} style={{margin:"30px" ,borderStyle:"solid" ,width:"25%" ,padding:"20px 20px" ,boxShadow:"10px 10px " ,borderRadius:"15px"}}>
+          <label form="cars" >Choose a match  </label>
           <select name="cars" id="select">
             {matches.map((match, index) => {
               return (
                 <>
-                {/* {console.log(match)} */}
-                <h1> Location: {match.Location}</h1>
-              <option  id="dee"  value={index}>{match.countries} </option>
-              </>
+                  {/* {console.log(match)} */}
+                  <h1> Location: {match.Location}</h1>
+                  <option id="dee" value={index}>
+                    {match.countries}{" "}
+                  </option>
+                </>
               );
             })}
           </select>
           <br></br>
-          <button  type="submit">
-        Submit
-      </button>
-      </form>
+          <button style={{margin:"10px 10px" ,borderRadius:"7px"}} type="submit">Submit</button>
+        </form>
 
-          <div id="omar" style={{ display: "none" }}>
-            <h1>City: {matches[this.state.x].Location}</h1>
+        <div id="omar" style={{ display: "none"  }}>
+          <h1 style={{margin:"30px 15px"}}>City: {matches[this.state.x].Location}</h1>
+        </div>
 
-          </div>
+         <div id="add" style={{ display: "none" ,margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px"}}>
+        <h2 style={{margin:"15px 30px"}}>Hotels:</h2>
+        <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
+          {this.state.hotelsArr.map((items, idx) => (
+            <Col>
+              <Card style={{borderStyle:"solid" ,boxShadow:"10px 10px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
+                {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
+                <Card.Body>
+                  <Card.Title>{items.name}</Card.Title>
+                  <Card.Text>
+                    <p>latitude: {items.latitude}</p>
+                    <p>longitude: {items.longitude}</p>
+                  </Card.Text>
+                  
+                  <Card.Text>
+                    <button style={{ borderRadius:"6px"}}
+                      onClick={() => {
+                        this.addDetails(items.destinationId,items.name);
+                      }}
+                    >
+                      {" "}
+                      more details
+                    </button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        </div>
+        <div id="del" style={{ display: "none",margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px"}}>
+        <h2   style={{ margin:"15px 30px" }}>Land Marks:</h2>
+        <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
+          {this.state.landmarkArr.map((items, idx) => (
+            <Col>
+              <Card style={{borderStyle:"solid" ,boxShadow:"10px 10px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
+                {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
+                <Card.Body>
+                  <Card.Title>{items.name}</Card.Title>
+                  <Card.Text>
+                    <p>latitude: {items.latitude}</p>
+                    <p>longitude: {items.longitude}</p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+       </div>
 
-          <Row xs={1} md={4} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-
+        <Hotelsdetail
+  setshow={this.state.setshow}
+  handleClose={this.handleClose}
+  featuresArr={this.state.featuresArr}
+  selName={this.state.selName}
+/>;
       </div>
+      
     );
+    
   }
 }
 
 export default withAuth0(Hotels);
+
+
+// {this.state.shows && (
+//   <p>
+//     {this.state.featuresArr.map((features) => {
+//       <p>hi</p>;
+//     })}
+//   </p>
+// )}
+// <Hotelsdetail
+//   setshow={this.state.setshow}
+//   handleClose={this.handleClose}
+//   featuresArr={this.state.featuresArr}
+// />;
