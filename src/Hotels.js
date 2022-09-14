@@ -57,8 +57,8 @@ class Hotels extends React.Component {
       url: "https://hotels4.p.rapidapi.com/locations/v2/search",
       params: { query: matches[y].Location, locale: "en_US", currency: "USD" },
       headers: {
-        "X-RapidAPI-Key": "fe69c4ff72mshe94bf22e4599113p1f56acjsn5d2335d2ea2f",
-        "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+        'X-RapidAPI-Key': '43208d84e2msh9819177abcfb5dap146f53jsndff7058bb404',
+        'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
       },
     };
 
@@ -90,8 +90,8 @@ class Hotels extends React.Component {
         locale: "en_US",
       },
       headers: {
-        "X-RapidAPI-Key": "fe69c4ff72mshe94bf22e4599113p1f56acjsn5d2335d2ea2f",
-        "X-RapidAPI-Host": "hotels4.p.rapidapi.com",
+        'X-RapidAPI-Key': '43208d84e2msh9819177abcfb5dap146f53jsndff7058bb404',
+        'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
       },
     };
 
@@ -188,7 +188,7 @@ class Hotels extends React.Component {
         </div>
         <div id="del" style={{ display: "none",margin:"30px 30px" ,borderStyle:"solid" ,border:"1px 1px rgba(128, 128, 128, .2)",borderRadius:"15px" ,paddingRight:"30px"}}>
         <div className="hotel_title">
-        <h2   style={{ margin:"15px 30px" }}>Land Marks:</h2></div>
+        <h2   style={{ margin:"15px 30px" }}>Landmarks</h2></div>
         <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
           {this.state.landmarkArr.map((items, idx) => (
             <Col>

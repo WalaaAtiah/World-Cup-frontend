@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 
 class Modulefooter extends React.Component {
   render() {
@@ -8,55 +7,46 @@ class Modulefooter extends React.Component {
       <>
         <Modal show={this.props.setshow} onHide={this.props.handleClose} stayle={{innerHeight:"100%"}} >
           <div>
-          <Modal.Header closeButton>
+          <Modal.Header  closeButton >
             <Modal.Title
-              style={{ color: "#300813", fontSize: "1.5rem", fontweight: "bold"   }}
+              style={{ fontSize: "1.5rem", fontweight: "bold", textAlign:"center"   }}
             >
+              <h3  style={{  textAlign:"center"   }}>
               {this.props.selBeast.name}
+              </h3>
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            <Card
-              style={{
-                width: "25rem",
-                borderBlockStyle: "solid",
-                borderWidth: "5px",
-                
-                margin: "10px",
-                borderRadius: "20px",
-                backgroundColor: "#edede3",
-                
-              }}
-            >
-              
-              <Card.Body>
-                <Card.Img
+          <Modal.Body style={{ textAlign:"center" }} >
+            
+            
+            
+                <img
                   variant="top"
                   src={this.props.selBeast.image}
                   alt="image"
                   title={this.props.selBeast.name}
-                  style={{ width:"20rem", height:"20rem" }}
+                  style={{ width:"20rem", height:"20rem" ,borderRadius:"15px" ,boxShadow:"2px 2px 1px gray "}}
                 />
-                <Card.Text  >
-                  <ul>
-                  <li style={{ fontSize: "1.2rem",color:"#8a1538" ,fontStyle:"bolde" }}>
+                <div>
+                  
+                  <h4 style={{ fontSize: "1.2rem",color:"black" ,fontStyle:"bolde" ,paddingTop:"15px" }}>
                     {" "}
                     Capacity : {this.props.selBeast.Capacity}
-                  </li>
-                  <li style={{ fontSize: "1.2rem",color:"#8a1538" }}>
+                  </h4>
+                  <h4 style={{ fontSize: "1.2rem",color:"black" }}>
                     Designed by :{this.props.selBeast.Designed_by}
-                  </li>
-                  <li style={{ fontSize: "1.2rem" ,color:"#8a1538"}}>
+                  </h4>
+                  <h4 style={{ fontSize: "1.2rem" ,color:"black"}}>
                     location :{this.props.selBeast.location}
-                  </li>
+                  </h4>
 
-                  <li style={{ fontSize: "1.2rem",color:"#8a1538" }}>
+                  <h4 style={{ fontSize: "1.2rem",color:"black" }}>
                   First_Match :{this.props.selBeast.First_Match}
-                  </li>
-                  </ul>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                  </h4>
+                  
+                  </div>
+                
+            
           </Modal.Body>
           {/* <Modal.Footer>
             <Button variant="secondary" onClick={this.props.handleClose}>

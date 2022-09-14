@@ -1,8 +1,11 @@
 #maincontainer{
-    padding-top: 10%;
+    margin-top: 34%;
     position: relative;
     width: 250px;
-    height: 320px;
+    height: 100%;
+  
+    
+    
    /* padding: 20px; */
    
     
@@ -24,7 +27,7 @@
 #thefront{
     position: absolute;
     width: 150%;
-    height: 200%;
+    height: 250%;
     backface-visibility: hidden; 
     background-image: url("./Assets/qatarFlaq.jpg");
     background-repeat: no-repeat;
