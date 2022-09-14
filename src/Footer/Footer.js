@@ -12,6 +12,7 @@ import {
   MDBRow,
   MDBRipple,
 } from "mdb-react-ui-kit";
+import { margin } from "@mui/system";
 
 class Footer extends React.Component {
   cardClick = (name) => {
@@ -195,7 +196,7 @@ class Footer extends React.Component {
 
         <div
           
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" ,padding:"10px 10px" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" ,padding:"10px 10px",textAlign:"center"  }}
         >
           © 2022 Copyright:
           <a
@@ -207,7 +208,7 @@ class Footer extends React.Component {
         </div>
         <div
           className=""
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)"}}
         >
           <MDBFooter
             className="text-center text-white"
