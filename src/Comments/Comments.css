@@ -1,48 +1,112 @@
-/* 
-*{
-    background-color: rgb(8, 12, 12);
-} */
+.main {
+    width: 100%;
+    height: 100%;
+}
 
-
-
-
-/* 
-.main-container{
-    height: 100vh;
+video {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -1.485rem;
+}
+.contenteeeeeee{
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin-top: -200px;
-
+    color: aliceblue;
+    margin-left: 35%;
+    margin-top: 20%;
+    border-radius: 10px ;
 }
 
-.comment-flexbox{
+.comment{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 50%;
+    color: black;
+    margin: 0.11rem;
+}
+.comment a{
+    color: black;
+    font-family: Impact, Haettenschweiler;
+
+
+}
+.avatar{
+    box-shadow: 0 0 0 2px #0e8b29;
+}
+.commentcomment{
+    display: inline-block;
+    padding: 2rem;
+    border: 2px solid black;
+    margin-left: 2rem;
+    box-shadow: 10px 10px rgb(48, 8, 19);
+    background-color: rgb(192, 178, 178);
+}
+.comment-navbar{
+    background-color: rgb(48, 8, 19);
+    margin-top: 1rem;
+    margin-bottom: -0.1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+
+}
+.comment-navbar h2{
+    color: rgb(255, 255, 255);
+
+}
+.top5{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(167, 14, 14);
+    margin-left: 40%;
+    margin-top: -45%;
+    border-radius: 10px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -3px -1px #0ab113;
+    /* background-color: #0ab113; */
+}
+.div-button{
+    margin-left: 30rem;
+}
+.add-comment-box{
+    display: inline-block;
+    padding: 2rem;
+    border: 3px solid black;
+    margin-left: 2rem;
+    box-shadow: 10px 10px rgb(48, 8, 19);
+    background-color: rgb(192, 178, 178);
+    width: 100%;
+
 }
 
-.comment-text{
-    margin: 12px 0;
-    font-size: 1.15rem;
-    font-weight: 600;
+.Welcomdiv{
+    background-color: rgb(48, 8, 19);
+    margin-top: 1rem;
+    margin-bottom: -0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: rgb(204, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -3px -1px #0ab113;
 }
 
-.input-box{
-    height: 75px;
-    width: 465px;
-    background-color: #ffffff;
-}
-
-.comment-button{
-    height: 40px;
-    width: 80px;
-    background-color: #7571b8;
-    color: white;
-    font-size: 1.05rem;
-    margin-top: 10px;
-    border-radius: 5px;
-    border-style: none;
-    cursor: pointer;
+/* .youtubevideo{
+    margin-top: -34%;
+    margin-left: 30%;
 } */

@@ -3,13 +3,14 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Welcome from '../welcome/Welcome';
 import Profile from '../Profile/Profile';
-import About from '../About/About'
+import About from '../About/About';
 import Hotels from '../Hotels';
-import Modulefooter from '../Footer/Modulefooter'
+import Modulefooter from '../Footer/Modulefooter';
 import Comment from '../Comments/Comments';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css"
-import Data from "../Footer/stadium.json"
+import "./App.css";
+import Youtubee from '../Comments/youtube';
+import Data from "../Footer/stadium.json";
 import {
   BrowserRouter as Router,
   Routes,
@@ -73,6 +74,11 @@ class App extends React.Component {
               exact path="/Hotels"
               element={<Hotels />}
             ></Route>
+             <Route 
+              exact path="/Goals"
+              element={<Youtubee />}
+            >
+            </Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer Module={this.Module} />
