@@ -1,8 +1,23 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .hihotels{
-display: flex;
+/* display: flex;
 justify-content: center;
 margin: 2rem;
-padding: 1rem; 
+padding: 1rem;  */
+background-color: rgb(48, 8, 19);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin:15px ;
+    padding: 10px;
+    border-radius: 100px;
 }
 .formHotels{
     display: flex;
@@ -12,7 +27,7 @@ padding: 1rem;
 .hoteleform{
     border:1px solid gray;
     padding: 2rem;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 4px 4px 1px gray;
     border-radius: 15px;
 }
 .formdiv{
@@ -20,6 +35,7 @@ padding: 1rem;
     gap:10px;
     font-weight: bold;
     font-size: larger;
+    
 }
 #select{
     padding: 3px;
@@ -51,4 +67,25 @@ color: whitesmoke;
     border-radius: 15px;
     padding-right: 30px;
     /* ,margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px" */
+}
+.hotel_title{
+    margin-left: 20px;
+    border-bottom:2px solid gray;
+    display:flex;
+    justify-content: center;
+}
+.hotel{
+    border-bottom:2px solid gray;
+    padding-top: 10px;
+}
+.row_card{
+    /* style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }} */
+    margin: left 500px;
+
+
+}
+.cards{
+    display: flex;
+    justify-content:center;
+    
 }

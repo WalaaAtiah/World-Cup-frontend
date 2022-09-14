@@ -153,23 +153,25 @@ class Hotels extends React.Component {
         </div>
 
          <div id="add" style={{ display: "none" }}>
-        <h2 style={{margin:"15px 30px"}}>Hotels:</h2>
+          <div className="hotel_title">
+        <h2 style={{margin:"15px 30px"}}>Hotels</h2>
+        </div>
         <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
           {this.state.hotelsArr.map((items, idx) => (
             <Col>
 
             
-              <Card style={{borderStyle:"solid" ,boxShadow:"3px 3px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
+              <Card style={{borderStyle:"solid" ,border:"1px 1px gray" ,borderRadius:"0px" ,background:"rgba(128, 128, 128, .2)",display:"flex",justifyContent:"center" , height:"12rem"}}>
                 {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                 <Card.Body>
-                  <Card.Title>{items.name}</Card.Title>
+                  <Card.Title style={{borderBottom:"2px solid gray"}}>{items.name}</Card.Title>
                   <Card.Text>
                     <p>latitude: {items.latitude}</p>
                     <p>longitude: {items.longitude}</p>
                   </Card.Text>
                   
                   <Card.Text>
-                    <button style={{ borderRadius:"6px"}}
+                    <button className="submittform"
                       onClick={() => {
                         this.addDetails(items.destinationId,items.name);
                       }}
@@ -184,15 +186,16 @@ class Hotels extends React.Component {
           ))}
         </Row>
         </div>
-        <div id="del" style={{ display: "none",margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px"}}>
-        <h2   style={{ margin:"15px 30px" }}>Land Marks:</h2>
+        <div id="del" style={{ display: "none",margin:"30px 30px" ,borderStyle:"solid" ,border:"1px 1px rgba(128, 128, 128, .2)",borderRadius:"15px" ,paddingRight:"30px"}}>
+        <div className="hotel_title">
+        <h2   style={{ margin:"15px 30px" }}>Land Marks:</h2></div>
         <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
           {this.state.landmarkArr.map((items, idx) => (
             <Col>
-              <Card style={{borderStyle:"solid" ,boxShadow:"10px 10px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
+              <Card style={{borderStyle:"solid" ,border:"1px 1px gray" ,borderRadius:"0px" ,background:"rgba(128, 128, 128, .2)",display:"flex",justifyContent:"center", height:"12rem"}}>
                 {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                 <Card.Body>
-                  <Card.Title>{items.name}</Card.Title>
+                  <Card.Title style={{borderBottom:"2px solid gray"}}>{items.name}</Card.Title>
                   <Card.Text>
                     <p>latitude: {items.latitude}</p>
                     <p>longitude: {items.longitude}</p>
