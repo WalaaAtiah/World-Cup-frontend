@@ -51,25 +51,23 @@ class About extends React.Component {
           </div>
 
           <p>
-           <h3 style={{color:"brown"}}>About Our Website: </h3> <h6>The 2022 FIFA World Cup is scheduled to be the
+           <h3 style={{color:"brown",textAlign:"justify",paddingTop:"6%"}}>About Our Website: </h3> <h5 style={{textAlign:"justify",paddingBottom:"5%"}}>The 2022 FIFA World Cup is scheduled to be the
             22nd running of the FIFA World Cup competition, the quadrennial
             international men's football championship contested by the senior
             national teams of the member associations of FIFA. It is scheduled
-            to take place in Qatar from 20 November to 18 December 2022, We have
+            to take place in Qatar from 20 November to 18 December 2022, We had
             created a website for the World Cup held in the State of Qatar that
             gives information about the teams participating in the league,
             determines the stadium in which the match will be held and gives the
             option for the user to book a hotel available in the area
-            surrounding the stadium for the match, in addition to making the
-            user design his own avatar that looks like The avatar of the team he
-            supports, and finally the fan can add a comment on the match and
-            follow the latest news in the league.</h6>
+            surrounding the stadium for the match,and finally the fan can add a comment on the match and
+            follow the latest news in the league.</h5>
             </p>
 
           
         </div>
          
-        <h1 className="title">Our Team Cards </h1>
+        <h1 className="title">Our Team  </h1>
         
           <div id="Ourcards">
         {/* <pic # 1 ></pic> */}
@@ -132,7 +130,7 @@ class About extends React.Component {
           <div className="team-content">
             <h2>Amani M ALZoubi</h2>
             <h3>Electrical engineer</h3>
-            <p>RF engineer /web development - Python</p>
+            <p>Web Developer - Python</p>
             <div className="team-skill">
               <div className="skill-name">
                 <p>HTML</p><p>90%</p>
@@ -141,7 +139,7 @@ class About extends React.Component {
                 <div className="progress-bar w-90"></div>
               </div>
               <div className="skill-name">
-                <p>CSS</p><p>85%</p>
+                <p>CSS</p><p>95%</p>
               </div>
               <div className="progress">
                 <div className="progress-bar w-80"></div>
@@ -172,18 +170,18 @@ class About extends React.Component {
             </div>
           </div>
           <div className="team-content">
-            <h2>Walaa W Atiyh</h2>
+            <h2>Wala'a Waleed Atiyh</h2>
             <h3>Electrical Engineering</h3>
             <p>Web Developer - Python </p>
             <div className="team-skill">
               <div className="skill-name">
-                <p>HTML</p><p>80%</p>
+                <p>HTML</p><p>90%</p>
               </div>
               <div className="progress">
                 <div className="progress-bar w-90"></div>
               </div>
               <div className="skill-name">
-                <p>CSS</p><p>90%</p>
+                <p>CSS</p><p>85%</p>
               </div>
               <div className="progress">
                 <div className="progress-bar w-80"></div>
@@ -214,7 +212,7 @@ class About extends React.Component {
             </div>
           </div>
           <div className="team-content">
-            <h2>Omar Darweesh</h2>
+            <h2>Omar Darwish</h2>
             <h3>computer science</h3>
             <p>web development and managing databases</p>
             <div className="team-skill">
@@ -258,7 +256,7 @@ class About extends React.Component {
           <div className="team-content">
             <h2>Omar Ali Saadeh</h2>
             <h3>Autotronics Engineering</h3>
-            <p>Web developer - Python </p>
+            <p>Artificial intelligence "AI" </p>
             <div className="team-skill">
               <div className="skill-name">
                 <p>HTML</p><p>80%</p>
@@ -285,7 +283,7 @@ class About extends React.Component {
             </div> 
             </div>
 
-            <div id="lastvideo">
+            {/* <div id="lastvideo">
              
         <video
 
@@ -296,7 +294,7 @@ class About extends React.Component {
           loop
         >
         </video>
-        </div>
+        </div> */}
       </>
     );
   }

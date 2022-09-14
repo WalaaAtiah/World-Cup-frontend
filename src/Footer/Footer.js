@@ -23,11 +23,11 @@ class Footer extends React.Component {
   render() {
     return (
       <MDBFooter
-        className="text-center text-white"
-        style={{ backgroundColor: "#caced1" }}
+        className=""
+        style={{ backgroundColor: "#caced1",margin:"20px 0px" }}
       >
-        <MDBContainer className="containerfooter">
-          <section className="sec">
+        <MDBContainer className="">
+          <section className="sec" style={{borderBottom:"2px solid black"}}>
             <MDBRow id="rowfooter">
               <MDBCol
                 lg="2"
@@ -193,92 +193,96 @@ class Footer extends React.Component {
             </MDBRow>
           </section>
         </MDBContainer>
-<div >
-        <div
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.2)",
-            padding: "10px 10px",
-            textAlign: "center",
-          }}
-        >
-          © 2022 Copyright:
-          <a
-            className="text-white"
-            href="https://github.com/orgs/World-Cup301/repositories"
-          >
-            GitHub link
-          </a>
-        </div>
-        <div className="" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+
+        <div style={{textAlign:"center"}} >
           <div
-            className="text-center text-white"
-            style={{ backgroundColor: "#a2a5a7" }}
+            style={{
+           textAlign: "center",
+           color:"black",
+           paddingTop:"10px"
+
+            }}
           >
-            <MDBContainer className="pt-4">
-              <section className="mb-4">
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#3b5998" }}
-                  href="https://www.facebook.com/fifaworldcup/"
-                  role="button"
-                >
-                  <MDBIcon fab className="fab fa-facebook-f" />
-                </MDBBtn>
-
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#55acee" }}
-                  href="https://twitter.com/fifaworldcup"
-                  role="button"
-                >
-                  <MDBIcon fab className="fa-twitter" />
-                </MDBBtn>
-
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#dd4b39" }}
-                  href="https://www.qatar2022.qa/ar/news"
-                  role="button"
-                >
-                  <MDBIcon fab className="fa-google" />
-                </MDBBtn>
-
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#ac2bac" }}
-                  href="https://www.instagram.com/fifaworldcup/"
-                  role="button"
-                >
-                  <MDBIcon fab className="fa-instagram" />
-                </MDBBtn>
-
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#333333" }}
-                  href="https://www.tiktok.com/@fifaworldcup"
-                  role="button"
-                >
-                  <MDBIcon fab className="fa-tiktok" />
-                </MDBBtn>
-
-                <MDBBtn
-                  floating
-                  className="m-1"
-                  style={{ backgroundColor: "#333333" }}
-                  href="https://github.com/orgs/World-Cup301/repositories"
-                  role="button"
-                >
-                  <MDBIcon fab className="fa-github" />
-                </MDBBtn>
-              </section>
-            </MDBContainer>
+            © 2022 Copyright:
+            <a
+            style={{color:"black",paddingLeft:"10px" }}
+              className=""
+              href="https://github.com/orgs/World-Cup301/repositories"
+            >
+              World Cup Application
+            </a>
           </div>
-        </div>
+          <div className="" style={{
+              display:"flex",justifyContent:"center",marginLeft:"7%"}}>
+            <div
+              className="text-center text-white"
+              style={{width:"30%",display:"flex",justifyContent:"center" }}
+            >
+              <MDBContainer className="pt-4" >
+                <section className="mb-4">
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#3b5998" }}
+                    href="https://www.facebook.com/fifaworldcup/"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fab fa-facebook-f" />
+                  </MDBBtn>
+
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#55acee" }}
+                    href="https://twitter.com/fifaworldcup"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fa-twitter" />
+                  </MDBBtn>
+
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#dd4b39" }}
+                    href="https://www.qatar2022.qa/ar/news"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fa-google" />
+                  </MDBBtn>
+
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#ac2bac" }}
+                    href="https://www.instagram.com/fifaworldcup/"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fa-instagram" />
+                  </MDBBtn>
+
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#333333" }}
+                    href="https://www.tiktok.com/@fifaworldcup"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fa-tiktok" />
+                  </MDBBtn>
+
+                  <MDBBtn
+                    floating
+                    className="m-1"
+                    style={{ backgroundColor: "#333333" }}
+                    href="https://github.com/orgs/World-Cup301/repositories"
+                    role="button"
+                  >
+                    <MDBIcon fab className="fa-github" />
+                  </MDBBtn>
+                </section>
+              </MDBContainer>
+            </div>
+          </div>
         </div>
       </MDBFooter>
     );
