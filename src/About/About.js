@@ -1,13 +1,8 @@
 import React from "react";
 import "./About.css";
-import video1 from "../About/Assets/production ID_3722209.mp4";
 import resolutionvideo  from '../About/Assets/fifaqatar.mp4'
 // import ReactReadMoreReadLess from "react-read-more-read-less";
-import VolumeOffOutlinedIcon from '@mui/icons-material/VolumeOffOutlined';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Row ,Col} from "react-bootstrap";
-import Data from './data.json'
-import Button from '@mui/material/Button';
 import bayan from '../About/Assets/resize-bayan.jpg'
 import Amani  from '../About/Assets/amani.jpg'
 import walaa from '../About/Assets/walaa.jpg'

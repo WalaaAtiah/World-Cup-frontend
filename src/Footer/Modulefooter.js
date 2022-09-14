@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 
 class Modulefooter extends React.Component {
   render() {

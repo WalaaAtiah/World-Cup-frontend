@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
 import "./Footer.css";
-import logo from "./logo.png";
 import {
   MDBFooter,
   MDBContainer,
@@ -12,7 +10,6 @@ import {
   MDBRow,
   MDBRipple,
 } from "mdb-react-ui-kit";
-import { margin } from "@mui/system";
 
 class Footer extends React.Component {
   cardClick = (name) => {
