@@ -193,10 +193,13 @@ class Footer extends React.Component {
             </MDBRow>
           </section>
         </MDBContainer>
-
+<div >
         <div
-          
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" ,padding:"10px 10px",textAlign:"center"  }}
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.2)",
+            padding: "10px 10px",
+            textAlign: "center",
+          }}
         >
           © 2022 Copyright:
           <a
@@ -206,11 +209,8 @@ class Footer extends React.Component {
             GitHub link
           </a>
         </div>
-        <div
-          className=""
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)"}}
-        >
-          <MDBFooter
+        <div className="" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+          <div
             className="text-center text-white"
             style={{ backgroundColor: "#a2a5a7" }}
           >
@@ -277,7 +277,8 @@ class Footer extends React.Component {
                 </MDBBtn>
               </section>
             </MDBContainer>
-          </MDBFooter>
+          </div>
+        </div>
         </div>
       </MDBFooter>
     );
@@ -285,56 +286,3 @@ class Footer extends React.Component {
 }
 
 export default Footer;
-
-// <div class="divfooter">
-//   <img
-//     src="https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-08/Stadium-974.jpg?h=27457cb0&itok=lwq-j9pX"
-//     alt="Avatar"
-//     className="w-100"
-//   />
-//   <div class="overlay">
-//     <div class="text">Stadium 974</div>
-//   </div>
-// </div>
-{
-  /* <MDBCol lg="2" md="12" className="modcol">
-                <MDBRipple
-                  rippleColor="light"
-                  className="bg-image hover-overlay shadow-1-strong rounded"
-                >
-                  <img
-                    src="https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-08/Education-City-Stadium.jpg?h=bf548865&itok=wIMLDvYX"
-                    alt="Avatar"
-                    className="image"
-                  />
-                  <div className="text"> Education City Stadium</div>
-                  <a href="#!">
-                    <div
-                      className="mask"
-                      style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                    ></div>
-                  </a>
-                </MDBRipple>
-              </MDBCol> */
-}
-{
-  /* <MDBCol lg="2" md="12" className="modcol">
-                <MDBRipple
-                  rippleColor="light"
-                  className="bg-image hover-overlay shadow-1-strong rounded"
-                >
-                  <img
-                    src="https://www.qatar2022.qa/sites/default/files/styles/1440x815/public/2022-08/Khalifa-International-Stadium.jpg?h=b5673621&itok=_sZr4yIe"
-                    alt="Avatar"
-                    className="image"
-                  />
-                  <div className="text"> Khalifa International Stadium</div>
-                  <a href="#!">
-                    <div
-                      className="mask"
-                      style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                    ></div>
-                  </a>
-                </MDBRipple>
-              </MDBCol> */
-}

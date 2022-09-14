@@ -1,0 +1,54 @@
+.hihotels{
+display: flex;
+justify-content: center;
+margin: 2rem;
+padding: 1rem; 
+}
+.formHotels{
+    display: flex;
+    justify-content: center;
+  /* formHotelstyle={{margin:"30px" ,borderStyle:"solid" ,width:"25%" ,padding:"20px 20px" ,boxShadow:"10px 10px " ,borderRadius:"15px" */
+}
+.hoteleform{
+    border:1px solid gray;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 15px;
+}
+.formdiv{
+    display: flex;
+    gap:10px;
+    font-weight: bold;
+    font-size: larger;
+}
+#select{
+    padding: 3px;
+    border-radius: 7px;
+}
+.submittform{
+    padding: 6px 10px ;
+    border-radius:7px ;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+    
+}
+.submittform:hover{
+background-color: rgba(48, 8, 19,.8);
+color: whitesmoke;
+}
+.city{
+ display:flex;
+ justify-content: center;
+ margin-top: 20px; 
+}
+.city h2{
+    border-bottom:2px solid gray;
+    padding: 8px;
+}
+#add{
+    border:solid gray;
+    margin :30px;
+    border-radius: 15px;
+    padding-right: 30px;
+    /* ,margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px" */
+}

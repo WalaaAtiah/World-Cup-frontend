@@ -28,6 +28,7 @@ class Header extends React.Component {
       
         </section>
         <section className="third_part">
+          {/* {console.log(user.picture)} */}
         {isAuthenticated&&<img src={user.picture} className="userPic"/>}
         <NavItem><LoginButton/></NavItem>
         <NavItem><LogoutButton/></NavItem>
