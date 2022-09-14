@@ -9,6 +9,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Hotelsdetail from "./Hotelsdetail";
+import "./Hotels.css"
 
 class Hotels extends React.Component {
   constructor(props) {
@@ -122,10 +123,11 @@ class Hotels extends React.Component {
   render() {
     return (
       <div >
-        <h1 style={{textAlign:"center" , margin:"20px 20px"}}>Please select one of the matches to see the available Hotels</h1>
-
-        <form onSubmit={this.displayMatchDetailsAndHotels} style={{margin:"30px" ,borderStyle:"solid" ,width:"25%" ,padding:"20px 20px" ,boxShadow:"10px 10px " ,borderRadius:"15px"}}>
-          <label form="cars" >Choose a match  </label>
+        <h1 className="hihotels">Please select one of the matches to see the available Hotels</h1>
+       <div className="formHotels">
+        <form  className="hoteleform" onSubmit={this.displayMatchDetailsAndHotels} >
+          <div className="formdiv">
+          <label form="cars" >Choose a Match  </label>
           <select name="cars" id="select">
             {matches.map((match, index) => {
               return (
@@ -139,20 +141,25 @@ class Hotels extends React.Component {
               );
             })}
           </select>
+          </div>
           <br></br>
-          <button style={{margin:"10px 10px" ,borderRadius:"7px"}} type="submit">Submit</button>
+          <button className="submittform" type="submit">Submit</button>
         </form>
-
+        </div>
         <div id="omar" style={{ display: "none"  }}>
-          <h1 style={{margin:"30px 15px"}}>City: {matches[this.state.x].Location}</h1>
+          <div className="city">
+          <h2 style={{margin:"30px 15px"}}>City: {matches[this.state.x].Location}</h2>
+          </div>
         </div>
 
-         <div id="add" style={{ display: "none" ,margin:"30px 30px" ,borderStyle:"solid" ,borderRadius:"15px" ,paddingRight:"30px"}}>
+         <div id="add" style={{ display: "none" }}>
         <h2 style={{margin:"15px 30px"}}>Hotels:</h2>
         <Row xs={1} md={4} className="g-4" style={{background:"white" ,margin:"10px 1px 10px 30px" ,justifyContent:"initial" }}>
           {this.state.hotelsArr.map((items, idx) => (
             <Col>
-              <Card style={{borderStyle:"solid" ,boxShadow:"10px 10px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
+
+            
+              <Card style={{borderStyle:"solid" ,boxShadow:"3px 3px " ,borderRadius:"15px" ,background:"#FFC4C4"}}>
                 {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                 <Card.Body>
                   <Card.Title>{items.name}</Card.Title>

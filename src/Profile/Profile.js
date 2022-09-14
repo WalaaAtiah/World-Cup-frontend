@@ -11,9 +11,8 @@ class Profile extends Component {
     return(
 
     <div className='divprofile'  style={{ display:"flex",justifyContent:'center' }}>
-      <p>the user name information</p>
-    <Card style={{ width: '22rem',margin:"15px" }}>
-    <Card.Img variant="top" src={user.picture} />
+    <Card style={{ width: '22rem',margin:"30px" }}>
+    <img variant="top" src={user.picture} />
     <Card.Body>
       <Card.Title>Hello {user.name}</Card.Title>
       <Card.Text>
