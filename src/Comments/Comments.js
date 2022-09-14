@@ -8,7 +8,6 @@ import Commentators from './Commentators.json';
 import { withAuth0 } from '@auth0/auth0-react';
 import Navbar from 'react-bootstrap/Navbar';
 import UpdateCom from './UpdateComment';
-import videoBg from './worldCup.mp4';
 import React from 'react';
 import axios from 'axios';
 import './Comments.css';
@@ -115,10 +114,15 @@ class Coment extends React.Component {
         return (
             <>
                 <div>
-                    <video vid src={videoBg} autoPlay loop muted />
+
                     <div>
-                        <h1 className='top5'>top 5 commentators</h1>
+                    <Navbar className='top5'>
+                                <h3>top 5 commentators</h3>
+                            </Navbar>
+
+
                         <div className="contenteeeeeee" >
+                            
                             <Carousel >
                                 {Commentators.map(item => {
                                     return (
@@ -127,10 +131,10 @@ class Coment extends React.Component {
                                                 className="d-block w-100"
                                                 src={item.img}
                                                 alt={item.name}
-                                                style={{ width: '5rem', height: '30rem', display:'flex',justifyContent: 'center', alignItems:'center' }}
+                                                style={{ width: '5rem', height: '30rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                                             />
                                             <Carousel.Caption
-                                                style={{ border: "solid 1px rgba(255,255,255,.5)", backgroundColor: "rgba(0,0,0,.5)", width: '22rem', height: '70px'}}
+                                                style={{ border: "solid 1px rgba(255,255,255,.5)", backgroundColor: "rgba(0,0,0,.5)", width: '22rem', height: '70px' }}
                                             >
                                                 <p>{item.name}</p>
                                             </Carousel.Caption>
@@ -150,7 +154,7 @@ class Coment extends React.Component {
                                     <div>
                                         <Comment.Group minimal>
                                             <Header as='h3' dividing>
-                                                
+
                                             </Header>
                                             <Comment className='commentcomment'>
                                                 <div className='comment'>
@@ -196,9 +200,9 @@ class Coment extends React.Component {
                                                     color="text.primary"
                                                 >
                                                     <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                                                        <AccountCircle sx={{ color: 'rgb(0, 0, 0)', mr: 1, my: 2.5, boxShadow: '0 0 0 2px #0e8b29', borderRadius: '15px' }} />
-                                                        <TextField onDragEnter={SubmitEvent} name="comCom" id="input-with-sx" label={"add comment"}
-                                                            variant="standard" style={{backgroundColor:''}} />
+                                                        <AccountCircle sx={{ color: 'rgb(100, 100, 100)', mr: 1, my: 2.5, boxShadow: '0 0 0 2px #0e8b29', borderRadius: '15px' }} />
+                                                        <TextField onDragEnter={SubmitEvent} name="comCom" id="input-with-sx" label={"Add a comment..."}
+                                                            variant="standard" />
                                                     </Box>
                                                 </Typography>
                                             </React.Fragment>
