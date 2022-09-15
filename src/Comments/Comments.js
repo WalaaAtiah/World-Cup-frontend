@@ -25,7 +25,7 @@ class Coment extends React.Component {
 
     componentDidMount = () => {
         axios
-            .get(`http://localhost:3010/coment`)
+            .get(`https://comments1234.herokuapp.com/coment`)
             .then(result => {
                 this.setState({
                     commentsArr: result.data
@@ -47,7 +47,7 @@ class Coment extends React.Component {
         }
         // console.log(obj);
         await axios
-            .post(`http://localhost:3010/coment`, obj)
+            .post(`https://comments1234.herokuapp.com/coment`, obj)
             .then(result => {
                 this.setState({
                     commentsArr: result.data
@@ -62,7 +62,7 @@ class Coment extends React.Component {
     deleteComment = (id) => {
         // console.log(id);
         axios
-            .delete(`http://localhost:3010/coment/${id}`)
+            .delete(`https://comments1234.herokuapp.com/coment/${id}`)
             .then(result => {
                 this.setState({
                     commentsArr: result.data
@@ -84,7 +84,7 @@ class Coment extends React.Component {
         }
         const id = this.state.currentComment._id;
         axios
-            .put(`http://localhost:3010/coment/${id}`, obj)
+            .put(`https://comments1234.herokuapp.com/coment/${id}`, obj)
             .then(result => {
                 this.setState({
                     commentsArr: result.data
