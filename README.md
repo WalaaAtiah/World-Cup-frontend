@@ -14,15 +14,15 @@
 ## Architecture
 **wireframe for the home page:**
 
-![wireframe for the home page ](./ZReadme-image/wireframe1.jpg)
+![wireframe for the home page ](./Readme-image/wireframe1.jpg)
 
 **wireframe for the comment page:**
 
-![wireframe for the comment page ](./ZReadme-image/wireframe2.jpg)
+![wireframe for the comment page ](./Readme-image/wireframe2.jpg)
 
 **wireframe for the profile page**
 
-![wireframe for the profile page ](./ZReadme-image/wireframe3.jpg)
+![wireframe for the profile page ](./Readme-image/wireframe3.jpg)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
